@@ -9,7 +9,7 @@ fi
 
 while IFS= read -r user; do
     if id "$user" &>/dev/nul; then
-        echo "User '$user' already exists."
+        echo "User '$user' does already exists."
     else
         useradd "$user"
         echo "Created user '$user'."
